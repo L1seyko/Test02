@@ -18,4 +18,24 @@ class getSearchUrlTest {
             fail("Ошибка: ожидался null, но был получен $nullResult")
         }
     }
+
+    // Тест п.8
+    @Test
+    fun testGetSearchUrlWithString() {
+        // 8.1 вызываем функцию с непустой строкой
+        val result = getSearchUrl("example")
+
+        // 8.2 проверка
+        if (result != null) {
+            println("success")
+        } else {
+            // 8.3 если результат равен null
+            fail("Ошибка: результат не должен быть null для строкового значения")
+        }
+    }
+
+
+
+
+
 }
