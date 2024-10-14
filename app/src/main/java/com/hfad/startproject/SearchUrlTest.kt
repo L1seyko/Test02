@@ -6,7 +6,7 @@ object SearchUrlTest {
         return if (query.isNullOrEmpty()) {
             null
         } else {
-            "https://example.com/search?q=$query"
+            "https://www.google.com/search?q=$query"
         }
     }
 }
