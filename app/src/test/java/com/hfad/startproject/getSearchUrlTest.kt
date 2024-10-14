@@ -33,9 +33,20 @@ class getSearchUrlTest {
             fail("Ошибка: результат не должен быть null для строкового значения")
         }
     }
+        // Тест п. 12
+    @Test
+    fun testGetSearchUrl() {
+    // вызов функции с непустой строкой
+         val query = "example"
+         val result = getSearchUrl(query)
 
+     // Ожидаем, что результат будет корректным URL
+         val expectedUrl = "https://www.google.com/search?q=$query"
+         if (result == expectedUrl) {
+             println("success")
+         } else {
+             fail("Ошибка: ожидался $expectedUrl, но был получен $result")
+         }
 
-
-
-
+    }
 }
